@@ -1,10 +1,175 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>����� ������</title>
+  <title>Макет первый</title>
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-  <p>Hello world</p>
+  <header class="main-header">
+    <div class="container">
+      <img class="logo" src="img/Logo.svg" width="94" height="85">
+      <nav class="main-navigation">
+        <ul class="main-menu">
+          <li>
+            <a href="#">about us</a>
+          </li>
+          <li>
+            <a href="#">work</a>
+          </li>
+          <li>
+            <a href="#">shop</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="about">
+      <h2>A NEW GENERATION OF VINTAGE BIKE</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+      </p>
+    </section>
+
+    <section class="works">
+      <div class="work-item">
+        <div class="bg-container">
+        </div>
+        <article>
+          <header>
+            <h2>vintage Oliva</h2>
+          </header>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived.
+          </p>
+        </article>
+      </div>
+      <div class="work-item">
+        <article>
+          <header>
+            <h2>La Boriosa</h2>
+          </header>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived.
+          </p>
+        </article>
+        <div class="bg-container">
+
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="bg-container-small">
+        </div>
+        <article>
+          <header>
+            <h2>retrò Bike - M. Hulot</h2>
+          </header>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived.
+          </p>
+        </article>
+        <div class="bg-container-small">
+        </div>
+      </div>
+
+    </section>
+    <section class="twitter">
+      <p>
+        <strong>AOD New York  @aod</strong>  /  35 min
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+      </p>
+      <!--Переключатель слайдов-->
+      <p>
+        <input class="control-item" id="btn-1" type="radio" name="toggle" checked>
+        <input class="control-item" id="btn-2" type="radio" name="toggle">
+        <input class="control-item" id="btn-3" type="radio" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"><span class="visually-hidden">Первый слайд</span></label>
+          <label for="btn-2"><span class="visually-hidden">Второй слайд</span></label>
+          <label for="btn-3"><span class="visually-hidden">Третий слайд</span></label>
+        </div>
+      </p>
+      <!--Переключатель слайдов-->
+    </section>
+    <section class="shop">
+      <div class="pictures-container">
+        <div class="column">
+          <a href="#">
+            <img src="img/Product1.png" width="266" height="267" alt="">
+          </a>
+          <a href="#"><img src="img/Product3.png" width="267" height="267" alt=""></a>
+          <a href="#"><img src="img/Product2.png" width="533" height="267" alt=""></a>
+        </div>
+        <div class="column">
+          <a href="#">
+            <img src="img/Product4.png" width="267" height="534" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Product5.png" width="267" height="534" alt="">
+          </a>
+        </div>
+        <div class="column">
+          <a href="#">
+            <img src="img/Product6.png" width="533" height="267" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Product7.png" width="266" height="267" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Product8.png" width="267" height="267" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="btn-cotainer">
+        <a class="btn" href="#">DISCOVER THE SHOP</a>
+      </div>
+
+    </section>
+    <section class="mailing">
+      <img src="img/Logo.svg">
+      <p class="claim">
+        Stay on the saddle!
+      </p>
+      <p>
+        <input type="text" placeholder="enter your email...">
+        <button class="btn green">GO</button>
+      </p>
+    </section>
+  </main>
+  <footer>
+    <address>
+      <p>AOD New York</p>
+      <p>2250 Lexington Avenue</p>
+      <p>New York, NY 10035 - info@domain.com</p>
+    </address>
+    <ul class="social">
+      <li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+      <li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+      <li><a href="#"><span class="visually-hidden">Pinterest</span></a></li>
+    </ul>
+    <div class="credits">
+      <p>Handcrafted by</p>
+      <img src="img/Y E B O Logo.svg"/>
+    </div>
+  </footer>
 </body>
 </html>
