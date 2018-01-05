@@ -35,10 +35,10 @@ a {
   text-decoration: none;
 }
 
-/*img {
+img {
   max-width: 100%;
   height: auto;
-}*/
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -188,6 +188,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/Logo-bicycle-company.svg"), url("../img/article1-bg1.jpg");
   background-position: center center, center center;
   background-repeat: no-repeat, no-repeat;
+  min-height: 600px;
 }
 
 .work-item article {
@@ -235,6 +236,7 @@ input[type="radio"].visually-hidden {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
+  min-height: 600px;
 }
 
   .work-item:nth-child(3) .bg-container-small:nth-of-type(2) {
@@ -321,6 +323,32 @@ input[type="radio"].visually-hidden {
   color: #848789;
 }
 
+.control-item {
+  display: none;
+}
+
+.slider-controls label {
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  margin: 0px 9px;
+  background-color: #fff;
+  border: 1px solid #a9afb3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.control-item:first-of-type:checked ~ .slider-controls label[for="btn-1"],
+.control-item:nth-of-type(2):checked ~ .slider-controls label[for="btn-2"],
+.control-item:nth-of-type(3):checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #a9afb3;
+}
+
+.control-container {
+  text-align: center;
+}
+
 .pictures-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,6 +368,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  font-size: 0px;
 }
 
 .pictures-container .column:first-child {
@@ -354,7 +383,19 @@ input[type="radio"].visually-hidden {
   width: 533px;
 }
 
+.pictures-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+}
+
 .pictures-container a {
+  display: block;
   font-size: 0px;
   position: relative;
 }
@@ -363,13 +404,14 @@ input[type="radio"].visually-hidden {
 .pictures-container a {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .pictures-container a::before {
   content: "Shop now";
   position: absolute;
   display: none;
-  width: 266px;
+  width: 267px;
   height: 267px;
   text-transform: uppercase;
   line-height: 267px;
@@ -388,12 +430,14 @@ input[type="radio"].visually-hidden {
   padding-top: 35px;
 }
 
-.pictures-container a:nth-child(2)::before {
-  width: 267px;
+.pictures-container .column:first-child .row:first-child a:nth-child(2)::before {
+  width: 266px;
   height: 267px;
+  top: 0;
+  left: 0;
 }
 
-.pictures-container a:nth-child(3)::before {
+.pictures-container .column:first-child .row:nth-child(2) a:first-child::before {
   width: 533px;
   height: 267px;
 }
@@ -410,18 +454,18 @@ input[type="radio"].visually-hidden {
   line-height: 534px;
 }
 
-.pictures-container .column:nth-child(3) a:first-child::before {
+.pictures-container .column:nth-child(3) .row:first-child a:first-child::before {
   width: 533px;
   height: 267px;
 }
 
-.pictures-container .column:nth-child(3) a:nth-child(2)::before {
-  width: 266px;
+.pictures-container .column:nth-child(3) .row:nth-child(2) a:first-child::before {
+  width: 267px;
   height: 267px;
 }
 
-.pictures-container .column:nth-child(3) a:nth-child(3)::before {
-  width: 267px;
+.pictures-container .column:nth-child(3) .row:nth-child(2) a:nth-child(2)::before {
+  width: 266px;
   height: 267px;
 }
 
@@ -619,8 +663,8 @@ footer address p:first-child {
   content: "";
   display: inline-block;
   vertical-align: top;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   background-position: center center;
   background-repeat: no-repeat;
 }
