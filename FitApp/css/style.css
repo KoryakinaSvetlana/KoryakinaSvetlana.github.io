@@ -54,7 +54,7 @@ input[type="radio"].visually-hidden {
 header {
   margin: 0;
   padding: 0;
-  min-height: 899px;
+  min-height: 897px;
   background-color: #2ecc71;
 
 }
@@ -74,11 +74,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding-top: 30px;
+  padding-top: 23px;
 }
 
 nav {
-  width: 535px;
+  width: 513px;
   color: #fefefe;
   margin-right: 50px;
   line-height: 45px;
@@ -108,13 +108,12 @@ nav {
 .main-menu a:active {
 }
 
-
 .btn {
   display: inline-block;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.72px;
   font-weight: 700;
   color: #2ecc71;
   background-color: #ffffff;
@@ -122,49 +121,67 @@ nav {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding: 7px 40px;
+  height: 42px;
+  width: 141px;
   border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.menu-container .btn {
+  margin-right: 29px;
+  margin-top: 2px;
 }
 
 .about {
   margin: 0;
   padding: 0;
-  padding-right: 500px;
+  padding-right: 555px;
   padding-top: 69px;
-  min-height: 755px;
+  min-height: 760px;
   background-image: url("../img/iPhone.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right 28px;
 }
 
-.about h2 {
-  position: relative;
-  padding-top: 275px;
-  font-family: inherit;
-  font-size: 64px;
-  line-height: 60px;
-  font-weight: 300;
-  letter-spacing: 2.56px;
-  color: #f4f4f4;
-}
+  .about h2 {
+    position: relative;
+    padding-top: 247px;
+    margin-bottom: 25px;
+    font-family: inherit;
+    font-size: 64px;
+    line-height: 60px;
+    font-weight: 300;
+    letter-spacing: 2.56px;
+    color: #f4f4f4;
+  }
 
 .about h2 strong {
   font-weight: 700;
 }
 
-.about h2::before {
-  content: "";
-  position: absolute;
-  top: 80px;
-  width: 115px;
-  height: 115px;
-  background-image: url("../img/AppIcon.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
+  .about h2::before {
+    content: "";
+    position: absolute;
+    top: 74px;
+    width: 111px;
+    height: 111px;
+    background-image: url("../img/AppIcon.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 
-.about p {
-  color: #f4f4f4;
+  .about p {
+    margin-top: 10px;
+    margin-bottom: 53px;
+    line-height: 32px;
+    letter-spacing: 0.72px;
+    color: #f4f4f4;
+  }
+
+.downloads a:first-child {
+  margin-right: 27px;
+  margin-left: 1px;
 }
 
 .advantage {
@@ -172,121 +189,136 @@ nav {
   background-color: #ffffff;
 }
 
-.advantage .container {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 900px;
-}
+  .advantage .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 900px;
+  }
 
 .advantage .column:first-child {
   width: 570px;
 }
 
-.advantage .column:last-child {
-  width: 560px;
-}
+  .advantage .column:last-child {
+    width: 560px;
+    margin-right: 16px;
+  }
+
+  .advantage h2 {
+    margin-top: 362px;
+    margin-bottom: 18px;
+    text-indent: -5px;
+  }
+
+  .advantage p {
+    margin-top: 10px;
+    letter-spacing: 0.54px;
+    line-height: 32px;
+  }
 
 .features {
   list-style: none;
   position: relative;
-  width: 475px;
-  height: 475px;
+  width: 467px;
+  height: 467px;
   margin: 0;
   padding: 0;
+  margin-top: 216px;
+  margin-left: 43px;
   border: 1px solid rgba(2,2,2,0.15);
   border-radius: 50%;
 }
 
-.features li a {
-  position: absolute;
-  top: -20px;
-  right: 145px;
-  width: 65px;
-  height: 65px;
-  background-color: #e7e7e7;
-  border: 1px solid #e7e7e7;
-  border-radius: 50%;
-  background-image: url("../img/sound.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+  .features li a {
+    position: absolute;
+    top: -10px;
+    right: 113px;
+    width: 60px;
+    height: 60px;
+    background-color: #e7e7e7;
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+    background-image: url("../img/sound.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
-.features li:nth-child(2) a {
-  top: 60px;
-  right: 20px;
-  background-image: url("../img/days.svg");
-}
+  .features li:nth-child(2) a {
+    top: 67px;
+    right: 10px;
+    background-image: url("../img/days.svg");
+  }
 
-.features li:nth-child(3) a {
-  top: 205px;
-  right: -30px;
-  background-image: url("../img/growth.svg");
-}
+  .features li:nth-child(3) a {
+    top: 201px;
+    right: -30px;
+    background-image: url("../img/growth.svg");
+  }
 
-.features li:nth-child(4) a {
-  top: 350px;
-  right: 20px;
-  background-image: url("../img/favorite.svg");
-}
+  .features li:nth-child(4) a {
+    top: 337px;
+    right: 10px;
+    background-image: url("../img/favorite.svg");
+  }
 
-.features li:nth-child(5) a {
-  top: 430px;
-  right: 135px;
-  background-image: url("../img/interface.svg");
-}
+  .features li:nth-child(5) a {
+    top: 412px;
+    right: 112px;
+    background-image: url("../img/interface.svg");
+  }
 
-.features li a:hover {
-  width: 85px;
-  height: 85px;
-  background-color: #2ecc71;
-  border: 5px solid #ffffff;
-  box-shadow: 0 0 60px rgba(15,65,36,0.05);
-  background-image: url("../img/growth-big.svg");
-}
+  .features li a:hover {
+    width: 86px;
+    height: 86px;
+    background-color: #2ecc71;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 60px rgba(15,65,36,0.05);
+    background-image: url("../img/growth-big.svg");
+  }
 
-.features li:first-child a:hover {
-  top: -30px;
-  right: 135px;
-  background-image: url("../img/sound-big.svg");
-}
+  .features li:first-child a:hover {
+    top: -28px;
+    right: 96px;
+    background-image: url("../img/sound-big.svg");
+  }
 
-.features li:nth-child(2) a:hover {
-  top: 50px;
-  right: 10px;
-  background-image: url("../img/days-big.svg");
-}
+  .features li:nth-child(2) a:hover {
+    top: 50px;
+    right: -7px;
+    background-image: url("../img/days-big.svg");
+  }
 
-.features li:nth-child(3) a:hover {
-  top: 195px;
-  right: -45px;
-}
+  .features li:nth-child(3) a:hover {
+    top: 183px;
+    right: -46px;
+  }
 
-.features li:nth-child(4) a:hover {
-  top: 330px;
-  right: 10px;
-  background-image: url("../img/favorite-big.svg");
-}
+  .features li:nth-child(4) a:hover {
+    top: 319px;
+    right: -7px;
+    background-image: url("../img/favorite-big.svg");
+  }
 
-.features li:nth-child(5) a:hover {
-  top: 420px;
-  right: 125px;
-  background-image: url("../img/interface-big.svg");
-}
+  .features li:nth-child(5) a:hover {
+    top: 395px;
+    right: 97px;
+    background-image: url("../img/interface-big.svg");
+  }
 
-.advantage .iPhone5c {
-  position: absolute;
-  left: -70px;
-  top: 95px;
-  width: 443px;
-  height: 784px;
-  background-image: url(../img/iPhone5C.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 1;
-}
+  .features::before {
+    content: "";
+    position: absolute;
+    left: -128px;
+    top: -125px;
+    width: 443px;
+    height: 784px;
+    background-image: url(../img/iPhone5C.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+  }
 
 .advantage h2,
 .meal-manage h2
@@ -313,25 +345,29 @@ nav {
 }
 
 .diet {
+  position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 90px;
-  min-height: 900px;
+  padding-top: 79px;
+  min-height: 820px;
   background-color: #f9f9f9;
 }
 
-.iPhones {
-  margin: 0;
-  margin-left: 170px;
-  margin-right: 200px;
-  width: 800px;
-  min-height: 550px;
-  background-image:  url("../img/iPhone2.png"), url("../img/iPhone2-L.png"), url("../img/iPhone2-R.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: top center, bottom left, bottom right;
-}
+  .diet::before {
+    content: "";
+    position: absolute;
+    top: 354px;
+    left: 204px;
+    width: 800px;
+    height: 545px;
+    background-image: url("../img/iPhone2.png"), url("../img/iPhone2-L.png"), url("../img/iPhone2-R.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top center, bottom -47px left -12px, bottom -77px right -29px;
+  }
 
 .diet h2 {
+  margin-bottom: 35px;
+  text-indent: -22px;
   font-size: 48px;
   line-height: 31.98px;
   font-weight: 300;
@@ -343,8 +379,8 @@ nav {
 .diet p {
   display: block;
   margin: 0 auto;
-  padding-bottom: 175px;
-  width: 855px;
+  padding-bottom: 105px;
+  width: 870px;
   line-height: 32px;
   letter-spacing: 0.54px;
   color: #5a5a5a;
