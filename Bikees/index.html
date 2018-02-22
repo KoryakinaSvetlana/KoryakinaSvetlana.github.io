@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet" />
+  <title>Bikees</title>
+</head>
+<body>
+   <svg style="display:none">
+     <symbol viewBox="0 0 16 14" id="twitter">
+       <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8,1.6c-1.6,0-2.9,1.2-2.9,2.8c0,0.2,0,0.4,0.1,0.6C5.6,4.9,3.4,3.8,2,2.1C1.7,2.5,1.6,3,1.6,3.5c0,1,0.5,1.8,1.3,2.3C2.4,5.8,2,5.7,1.6,5.5v0c0,1.3,1,2.5,2.3,2.7C3.7,8.3,3.4,8.3,3.1,8.3c-0.2,0-0.4,0-0.5,0C3,9.4,4,10.2,5.3,10.2c-1,0.7-2.3,1.2-3.6,1.2c-0.2,0-0.5,0-0.7,0c1.3,0.8,2.8,1.3,4.5,1.3c5.4,0,8.3-4.2,8.3-7.9c0-0.1,0-0.2,0-0.4c0.6-0.4,1.1-0.9,1.5-1.4c-0.5,0.2-1.1,0.4-1.7,0.4c0.6-0.3,1.1-0.9,1.3-1.5c-0.6,0.3-1.2,0.6-1.8,0.7C12.4,1.9,11.7,1.6,10.8,1.6" />
+     </symbol>
+     <symbol viewBox="0 0 18 16" id="google-plus">
+       <path fill-rule="evenodd" clip-rule="evenodd" d="M7.4,2.5C7.2,2.2,7,1.9,6.6,1.6C6.3,1.4,6,1.3,5.5,1.3
+	c-0.5,0-1,0.2-1.4,0.6C3.9,2.3,3.7,2.8,3.7,3.4c0,0.7,0.2,1.5,0.6,2.2c0.2,0.4,0.5,0.7,0.8,0.9c0.3,0.3,0.7,0.4,1.1,0.4
+	c0.5,0,1-0.2,1.3-0.6C7.8,6.1,7.9,5.8,8,5.5c0-0.3,0-0.5,0-0.7C8,4.1,7.8,3.3,7.4,2.5z M5.7,10.1c-0.4,0.1-0.9,0.1-1.3,0.3
+	c-0.1,0-0.2,0.1-0.4,0.2c-0.2,0.1-0.4,0.2-0.6,0.4c-0.2,0.2-0.3,0.4-0.5,0.6c-0.1,0.2-0.2,0.5-0.2,0.9c0,0.7,0.3,1.3,1,1.7
+	c0.6,0.4,1.5,0.7,2.5,0.7c1,0,1.7-0.2,2.2-0.6c0.5-0.4,0.7-0.9,0.7-1.5c0-0.5-0.2-0.9-0.5-1.3C8.3,11,7.7,10.5,7,10
+	c-0.1,0-0.3,0-0.5,0C6.4,10,6.1,10,5.7,10.1z M8.4,1.3c0.1,0.1,0.3,0.2,0.4,0.3C8.9,1.8,9.1,2,9.2,2.2C9.4,2.4,9.5,2.7,9.6,3
+	c0.1,0.3,0.1,0.6,0.1,1c0,0.7-0.2,1.3-0.5,1.7C9.1,5.9,9,6.1,8.8,6.2C8.6,6.4,8.4,6.6,8.2,6.8C8.1,6.9,7.9,7,7.8,7.2
+	C7.7,7.3,7.7,7.5,7.7,7.7c0,0.2,0.1,0.4,0.2,0.5C8,8.4,8.1,8.5,8.2,8.6l0.7,0.5c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.4,0.5,1,0.5,1.6
+	c0,1-0.4,1.8-1.3,2.5c-0.9,0.8-2.2,1.2-3.9,1.2c-1.4,0-2.5-0.3-3.2-0.9C1.4,14.2,1,13.5,1,12.8c0-0.4,0.1-0.8,0.3-1.2
+	c0.2-0.4,0.6-0.8,1.2-1.2C3.2,10,3.9,9.8,4.6,9.7c0.7-0.1,1.3-0.2,1.8-0.2C6.3,9.3,6.1,9.1,6,8.9C5.9,8.7,5.8,8.4,5.8,8.1
+	c0-0.2,0-0.3,0.1-0.4C5.9,7.6,6,7.5,6,7.4c-0.2,0-0.4,0-0.7,0c-1.1,0-1.9-0.3-2.5-1C2.3,5.8,2,5.1,2,4.3c0-1,0.4-1.8,1.3-2.6
+	c0.6-0.5,1.2-0.8,1.8-0.9c0.6-0.1,1.2-0.2,1.7-0.2h4.1L9.6,1.3H8.4z M17.2,7.9L17.2,7.9L17.2,7.9l-2.1,0v2H15V10h-1.2V7.9h-2.2V6.7
+	h0.2v0h2V4.6H15v0h0.1v2.1h2.1V7.9z" />
+     </symbol>
+     <symbol viewBox="0 0 14 16" id="facebook">
+       <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9,4.6v1.9h2.8l-0.5,2.3H7.9v6.4H5.5V8.8H3.2V6.5h2.3V4.5
+	C5.5,2.3,6.9,1,8.9,1c0.9,0,1.7,0.1,1.9,0.1v2.2l-1.7,0C8.1,3.3,7.9,3.8,7.9,4.6" />
+     </symbol>
+  </svg>
+  <header class="page-header">
+    <div class="container container--flex">
+      <div class="logo">
+        <picture>
+          <source media="(min-width: 750px)" srcset="img/Logo.svg">
+          <img src="img/Logo-mobile.svg" width="120" height="30" alt="Bikees">
+        </picture>
+      </div>
+      <nav class="navigation">
+        <button class="navigation__toogle"></button>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search ..." />
+      </div>
+    </div>
+  </header>
+  <main class="page-content">
+    <section class="page-content__item fixies">
+      <div class="page-content__item-wrapper">
+        <h2>Fixies</h2>
+        <p>Hisper style</p>
+        <a href="#">Choisir son modèle</a>
+      </div>
+    </section>
+    <section class="page-content__item cruisers">
+      <div class="page-content__item-wrapper">
+        <h2>Cruisers</h2>
+        <p>Hippie style</p>
+        <a href="#">Choisir son modèle</a>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="page-footer__copyright">
+      <div class="page-footer__logo">
+        <img src="img/Logo-mobile.svg" width="120" height="30" />
+      </div>
+      <p>PAIEMENT 100% SECURISÉ - DONNÉES CRIPTÉES ET CHIFRÉES.</p>
+      <p>Livraison gratuite à partir de 50€ d’achat</p>
+      <p class="copyright">©BIKEES.2015</p>
+    </section>
+    <section class="page-footer__links">
+      <ul class="links">
+        <li class="links__item">
+          <a href="#">FIXIES</a>
+        </li>
+        <li class="links__item">
+          <a href="#">CRUISERS</a>
+        </li>
+        <li class="links__item">
+          <a href="#">ACCESSOIRES</a>
+        </li>
+        <li class="links__item">
+          <a href="#">MENTIONS</a>
+        </li>
+        <li class="links__item">
+          <a href="#">C.G.U</a>
+        </li>
+        <li class="links__item">
+          <a href="#">CONTACT</a>
+        </li>
+      </ul>
+    </section>
+    <section class="page-footer__contact">
+      <h2>Inscription Newsletter</h2>
+      <a class="page-footer__btn" href="#">Saisissez votre adresse mail</a>
+      <ul class="social">
+        <li>
+          <a class="social__item social__item--twitter" href="#">
+            <span class="visually-hidden">twitter</span>
+            <svg width="16" height="14">
+              <use xlink:href="#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__item social__item--google-plus" href="#">
+            <span class="visually-hidden">google plus</span>
+            <svg width="18" height="16">
+              <use xlink:href="#google-plus"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__item social__item--facebook" href="#">
+            <span class="visually-hidden">facebook</span>
+            
+            <svg width="14" height="16">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  <script>
+// Picture element HTML5 shiv
+  document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+</body>
+</html>
