@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+  "rules": {
+    "property-no-vendor-prefix": [
+      true,
+      {
+        "ignoreProperties": ["/mask-*/"]
+      }
+    ]
+  }
+}

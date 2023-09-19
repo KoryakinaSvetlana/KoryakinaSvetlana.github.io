@@ -1,0 +1,26 @@
+{
+  "name": "KoryakinaSvetlana.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "stylelint": "stylelint \"**/*.css\" --fix",
+    "linthtml": "linthtml **/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoryakinaSvetlana/KoryakinaSvetlana.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KoryakinaSvetlana/KoryakinaSvetlana.github.io/issues"
+  },
+  "homepage": "https://github.com/KoryakinaSvetlana/KoryakinaSvetlana.github.io#readme",
+  "devDependencies": {
+    "@linthtml/linthtml": "0.9.4",
+    "linthtml-config-htmlacademy": "1.0.3",
+    "stylelint": "14.16.1",
+    "stylelint-config-htmlacademy": "1.1.4"
+  }
+}
